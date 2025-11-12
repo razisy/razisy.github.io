@@ -1,0 +1,55 @@
+/* Base theme (auto supports dark mode via prefers-color-scheme) */
+:root{
+  --bg:#ffffff; --text:#111827; --muted:#6b7280; --card:#f9fafb; --line:#e5e7eb; --brand:#0ea5e9; --brand-ink:#075985;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0b1220; --text:#e5e7eb; --muted:#9ca3af; --card:#0f172a; --line:#1f2937; --brand:#38bdf8; --brand-ink:#7dd3fc;
+  }
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--bg); color:var(--text);
+}
+.container{max-width:1000px;margin:0 auto;padding:0 16px}
+
+/* Header & Nav */
+.site-header{border-bottom:1px solid var(--line); background:rgba(0,0,0,0.02)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:14px 16px}
+.brand{margin:0;font-size:20px}
+.nav a{color:var(--text);text-decoration:none;margin-left:14px;padding:6px 8px;border-radius:8px}
+.nav a[aria-current="page"]{background:var(--card);border:1px solid var(--line)}
+.nav a:hover{color:var(--brand)}
+
+/* Hero */
+.hero{padding:44px 0;border-bottom:1px solid var(--line)}
+.hero h2{margin:0 0 8px;font-size:28px}
+.hero p{max-width:780px;margin:0 0 18px;color:var(--muted)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-block;background:var(--brand);color:white;text-decoration:none;
+  padding:10px 14px;border-radius:10px;font-weight:600
+}
+.btn.secondary{background:transparent;color:var(--brand);border:2px solid var(--brand)}
+.btn:hover{filter:brightness(1.05)}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:28px 0}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px
+}
+.card h3{margin:0 0 6px 0}
+.card p{margin:0 0 8px 0;color:var(--muted)}
+.card .link{color:var(--brand);text-decoration:none;font-weight:600}
+.card .link:hover{text-decoration:underline}
+.card.ghost{opacity:.85}
+
+/* Panels / grid */
+.grid.two-col{display:grid;grid-template-columns:1fr;gap:16px;margin:12px 0 48px}
+@media (min-width:820px){.grid.two-col{grid-template-columns:1fr 1fr}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+
+/* Footer */
+.site-footer{border-top:1px solid var(--line);padding:18px 0;margin-top:28px;color:var(--muted)}
