@@ -1,15 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My CS 499 ePortfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Razi Syed • CS-499 ePortfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Welcome to My CS 499 ePortfolio</h1>
-  <p>This website contains my enhanced artifacts, code review, and self-assessment for SNHU CS-499.</p>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Razi Syed</h1>
+      <nav class="nav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="CS360_EventTracker.html">CS-360 Artifact</a>
+        <a href="CS210_CornerGrocer.html">CS-210 Artifact</a>
+        <a href="CS340_Grazioso.html">CS-340 Artifact</a>
+        <!-- future pages:
+        <a href="code_review.html">Code Review</a>
+        <a href="self_assessment.html">Self-Assessment</a>
+        -->
+      </nav>
+    </div>
+  </header>
 
-  <h2>Enhanced Artifacts</h2>
-  <ul>
-    <li><a href="CS360_EventTracker.html">CS-360 Event Tracker (Mobile App)</a></li>
-  </ul>
+  <section class="hero">
+    <div class="container">
+      <h2>CS-499 Computer Science Capstone ePortfolio</h2>
+      <p>
+        This site showcases my enhanced artifacts, code review, and professional
+        reflections from the SNHU CS-499 Capstone. Each artifact highlights a
+        different area of computer science proficiency, including software
+        design, data structures, and database management.
+      </p>
+      <div class="cta-row">
+        <a class="btn" href="CS360_EventTracker.html">View CS-360 Artifact</a>
+        <a class="btn secondary" href="mailto:razisyed7890@gmail.com">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="cards">
+      <article class="card">
+        <h3>CS-360 Event Tracker (Android)</h3>
+        <p>
+          Enhanced mobile application built with <strong>MVVM</strong>,
+          <strong>Room</strong>, <strong>Repository</strong> pattern, and
+          <strong>WorkManager</strong>. Demonstrates software design and
+          engineering proficiency.
+        </p>
+        <a class="link" href="CS360_EventTracker.html">Open Artifact →</a>
+      </article>
+
+      <article class="card">
+        <h3>CS-210 Corner Grocer (C++)</h3>
+        <p>
+          Inventory-tracking console application enhanced with <strong>maps</strong>,
+          <strong>file I/O</strong>, and <strong>data visualization</strong>.
+          Demonstrates algorithms and data structures proficiency.
+        </p>
+        <a class="link" href="CS210_CornerGrocer.html">Open Artifact →</a>
+      </article>
+
+      <article class="card">
+        <h3>CS-340 Grazioso Salvare (Python)</h3>
+        <p>
+          Full-stack <strong>MongoDB</strong> dashboard and CRUD API project
+          enhanced for secure, efficient data management. Demonstrates database
+          and backend development proficiency.
+        </p>
+        <a class="link" href="CS340_Grazioso.html">Open Artifact →</a>
+      </article>
+    </section>
+
+    <section class="grid two-col">
+      <div class="panel">
+        <h3>What I Focused On</h3>
+        <ul>
+          <li>Software Design & Engineering (CS-360)</li>
+          <li>Algorithms & Data Structures (CS-210)</li>
+          <li>Databases & CRUD Operations (CS-340)</li>
+          <li>Secure, maintainable, and readable code</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>About This Site</h3>
+        <p>
+          Built using GitHub Pages with lightweight HTML/CSS. Each artifact page
+          links to project documentation, downloadable source code, and
+          reflections on learning outcomes from SNHU’s Computer Science program.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="y"></span> Razi Syed • CS-499 ePortfolio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
