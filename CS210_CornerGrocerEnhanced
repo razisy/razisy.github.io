@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS-210 Enhanced Artifact – Corner Grocer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Razi Syed</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="CS360_EventTracker.html">CS-360 Artifact</a>
+        <a href="CS210_CornerGrocer.html">CS-210 Original</a>
+        <a href="CS210_CornerGrocerEnhanced.html" aria-current="page">CS-210 Enhanced</a>
+        <a href="CS340_Grazioso.html">CS-340 Artifact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>CS-210 Enhanced Corner Grocer Artifact (CS-499 Capstone)</h2>
+
+    <p>
+      This enhanced artifact is an upgraded version of my original CS-210 Corner Grocer project. 
+      The goal of this enhancement, completed as part of the CS-499 Capstone, was to demonstrate 
+      proficiency in <strong>algorithms</strong> and <strong>data structures</strong> by improving 
+      performance, scalability, and functionality.
+    </p>
+
+    <h3>✔ Enhancements Included</h3>
+    <ul>
+      <li>Replaced basic counting with <strong>unordered_map</strong> for O(1) lookups</li>
+      <li>Added a <strong>min-heap</strong> structure for efficient Top-K frequency selection</li>
+      <li>Implemented a <strong>Trie</strong> (prefix tree) for prefix searching</li>
+      <li>Improved file I/O and input data normalization</li>
+      <li>Refactored code for readability and performance</li>
+    </ul>
+
+    <h3>📥 Download Enhanced Artifact</h3>
+    <p>
+      <a class="btn" href="CornerGrocerEnhanced_CS210.zip" download>Download Enhanced Code</a>
+    </p>
+
+    <h3>📝 Milestone 3 Narrative</h3>
+    <p>
+      <a class="btn secondary" href="Milestone_Three_Narrative.docx" download>Download Narrative</a>
+    </p>
+
+    <h3>🎥 Video Presentation</h3>
+    <p>My recorded walkthrough of this enhanced artifact is available below:</p>
+
+    <!-- Add your video embed code here -->
+    <div class="video-wrapper">
+      <iframe width="560" height="315"
+        src="YOUR_VIDEO_EMBED_URL_HERE"
+        title="Corner Grocer Enhancement Presentation"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="y"></span> Razi Syed • CS-499 ePortfolio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
