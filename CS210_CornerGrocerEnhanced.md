@@ -22,14 +22,14 @@
 
   <main class="container">
 
-    <h2>CS-210 Enhanced Corner Grocer Artifact (CS-499 Capstone)</h2>
+    <h2>CS-210 Corner Grocer Artifact (CS-499 Capstone)</h2>
 
     <p>
-      This enhanced artifact expands on my original CS-210 Corner Grocer project, redesigned for
-      the CS-499 Capstone to demonstrate proficiency in <strong>algorithms</strong>,
-      <strong>data structures</strong>, and <strong>efficient problem-solving</strong>.
-      These enhancements significantly improved the performance, functionality, and overall
-      design quality of the application.
+      This artifact is based on my original CS-210 Corner Grocer project and was enhanced for
+      the CS-499 Capstone to demonstrate proficiency in
+      <strong>algorithms</strong>, <strong>data structures</strong>, and
+      <strong>efficient problem-solving</strong>. The enhanced version significantly improves
+      the performance, functionality, and overall design quality of the application.
     </p>
 
     <h3>Enhancement Summary</h3>
@@ -41,10 +41,17 @@
       <li>Enhanced code readability, structure, and maintainability</li>
     </ul>
 
-    <h3>Download Enhanced Artifact</h3>
+    <h3>Download Original and Enhanced Artifacts</h3>
+
+    <p>
+      <a class="btn secondary" href="CS210Grocery-Tracking Program.zip" download>
+        Download Original CS-210 Corner Grocer Project
+      </a>
+    </p>
+
     <p>
       <a class="btn" href="CornerGrocerEnhanced_CS210.zip" download>
-        Download Enhanced Code
+        Download Enhanced Corner Grocer Project
       </a>
     </p>
 
