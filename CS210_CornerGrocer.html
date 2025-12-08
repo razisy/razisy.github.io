@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CS-210 Enhanced Artifact – Corner Grocer</title>
+  <title>CS-210 Corner Grocer – Algorithms & Data Structures Artifact</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -14,65 +14,82 @@
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="CS360_EventTracker.html">CS-360 Artifact</a>
-        <a href="CS210_CornerGrocerEnhanced.html" aria-current="page">CS-210 Enhanced</a>
+        <a href="CS210_CornerGrocer.html" aria-current="page">CS-210 Artifact</a>
         <a href="CS340_Grazioso.html">CS-340 Artifact</a>
+        <a href="VideoPresentation.html">Video Presentation</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
 
-    <h2>CS-210 Corner Grocer Artifact (CS-499 Capstone)</h2>
+    <h2>CS-210 Corner Grocer – Algorithms &amp; Data Structures Artifact</h2>
 
-    <p>
-      This artifact is based on my original CS-210 Corner Grocer project and was enhanced for
-      the CS-499 Capstone to demonstrate proficiency in
-      <strong>algorithms</strong>, <strong>data structures</strong>, and
-      <strong>efficient problem-solving</strong>. The enhanced version significantly improves
-      the performance, functionality, and overall design quality of the application.
-    </p>
+    <section>
+      <h3>Overview</h3>
+      <p>
+        This artifact is based on my original <strong>CS-210: Corner Grocer</strong> project, which 
+        reads a list of grocery items, calculates purchase frequencies, and displays the results to 
+        the user. For my <strong>CS-499 Capstone</strong>, I enhanced this project to demonstrate 
+        proficiency with <strong>algorithms</strong>, <strong>data structures</strong>, and 
+        <strong>efficient problem-solving</strong>. The enhanced version focuses on improving 
+        performance, organizing the logic more clearly, and adding functionality that would be 
+        useful in a real grocery analytics scenario.
+      </p>
+    </section>
 
-    <h3>Enhancement Summary</h3>
-    <ul>
-      <li>Implemented <strong>unordered_map</strong> for O(1) frequency lookups</li>
-      <li>Added a <strong>min-heap</strong> to compute Top-K frequent items efficiently</li>
-      <li>Built a <strong>Trie (prefix tree)</strong> for fast prefix-based searching</li>
-      <li>Improved input normalization for accurate item recognition</li>
-      <li>Enhanced code readability, structure, and maintainability</li>
-    </ul>
+    <section>
+      <h3>Original Artifact (Before Enhancement)</h3>
+      <p>
+        In the original CS-210 implementation, the program:
+      </p>
+      <ul>
+        <li>Read items from an input file and counted occurrences</li>
+        <li>Used basic containers and loops to manage item frequencies</li>
+        <li>Displayed counts to the console and generated a simple text file</li>
+        <li>Provided a basic histogram-like output but with limited flexibility</li>
+      </ul>
+      <p>
+        While this version met the course requirements, it did not fully leverage more advanced 
+        data structures or algorithmic patterns that could make the solution more scalable and 
+        extensible. This made it a strong candidate for enhancement in the Algorithms &amp; 
+        Data Structures category.
+      </p>
 
-    <h3>Download Original and Enhanced Artifacts</h3>
+      <p>
+        <a class="btn secondary" href="CS210Grocery-Tracking Program.zip" download>
+          Download Original CS-210 Corner Grocer Project
+        </a>
+      </p>
+    </section>
 
-    <p>
-      <a class="btn secondary" href="CS210Grocery-Tracking Program.zip" download>
-        Download Original CS-210 Corner Grocer Project
-      </a>
-    </p>
+    <section>
+      <h3>Final Enhanced Artifact — CS-499 Submission</h3>
+      <p>
+        For the capstone, I refactored and extended the Corner Grocer program to use more efficient 
+        data structures and to support additional analytics-style features. The enhanced version 
+        includes the following improvements:
+      </p>
 
-    <p>
-      <a class="btn" href="CornerGrocerEnhanced_CS210.zip" download>
-        Download Enhanced Corner Grocer Project
-      </a>
-    </p>
-
-    <h3>Download Milestone 3 Narrative</h3>
-    <p>
-      <a class="btn secondary" href="Milestone_Three_Narrative.docx" download>
-        Download Narrative
-      </a>
-    </p>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="y"></span> Razi Syed • CS-499 ePortfolio</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
-
-</body>
-</html>
+      <ul>
+        <li>
+          <strong>unordered_map for O(1) lookups</strong> — Replaced less efficient structures with 
+          <code>std::unordered_map</code> to store item frequencies, providing average constant-time 
+          access and updates.
+        </li>
+        <li>
+          <strong>Min-heap for Top-K frequent items</strong> — Added a <code>std::priority_queue</code>
+          (min-heap pattern) to compute the most frequently purchased items without sorting the entire 
+          dataset each time.
+        </li>
+        <li>
+          <strong>Trie (prefix tree) for prefix searches</strong> — Implemented a Trie structure to 
+          support fast prefix-based search, allowing users to look up all items that start with a 
+          given prefix (for example, items starting with “ap”).
+        </li>
+        <li>
+          <strong>Input normalization and validation</strong> — Normalized case and spacing for 
+          consistent lookups and added checks for invalid or empty input to improve robustness.
+        </li>
+        <li>
+          <strong>Improved
