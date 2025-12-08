@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CS-340 Enhanced Artifact – Grazioso Salvare</title>
+  <title>CS-340 Grazioso Salvare – Database Artifact</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 
@@ -14,52 +14,155 @@
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="CS360_EventTracker.html">CS-360 Artifact</a>
-        <a href="CS210_CornerGrocerEnhanced.html">CS-210 Artifact</a>
+        <a href="CS210_CornerGrocer.html">CS-210 Artifact</a>
         <a href="CS340_Grazioso.html" aria-current="page">CS-340 Artifact</a>
+        <a href="VideoPresentation.html">Video Presentation</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
 
-    <h2>CS-340 Grazioso Salvare Artifact (CS-499 Capstone)</h2>
+    <h2>CS-340 Grazioso Salvare – Database & Full-Stack Artifact</h2>
+
+    <section>
+      <h3>Overview</h3>
+      <p>
+        The Grazioso Salvare project was originally created for 
+        <strong>CS-340: Advanced Programming Concepts</strong>. The goal was to design a 
+        Python-based dashboard application that interacts with a MongoDB database using fully 
+        implemented CRUD functionality. For my <strong>CS-499 Capstone</strong>, I selected this 
+        project as my <strong>Databases enhancement</strong> because it clearly demonstrates 
+        database design, secure CRUD operations, data filtering, and integration between 
+        Python, MongoDB, and a user-facing dashboard.
+      </p>
+
+      <p>
+        Through this enhancement, I improved data reliability, added error handling, strengthened 
+        input validation, and ensured the CRUD interface followed secure database access practices 
+        suitable for real-world applications.
+      </p>
+    </section>
+
+    <section>
+      <h3>Original Artifact (Before Enhancement)</h3>
+      <p>The original CS-340 artifact included:</p>
+
+      <ul>
+        <li>Basic Python CRUD wrapper using PyMongo</li>
+        <li>Simple UI interaction for filtering animal rescue data</li>
+        <li>Minimal error handling and limited validation</li>
+        <li>Direct calls to MongoDB without abstraction layers</li>
+        <li>Functional but not fully optimized or secure operations</li>
+      </ul>
+
+      <p>
+        Although the project met the original course requirements, it lacked strong encapsulation, 
+        security considerations, and structured error-handling logic. This made it an excellent 
+        candidate for enhancement within the Databases category.
+      </p>
+
+      <p>
+        <a class="btn secondary" href="Grazioso_Salvare_Original.zip" download>
+          Download Original CS-340 Grazioso Salvare Project
+        </a>
+      </p>
+    </section>
+
+    <section>
+      <h3>Final Enhanced Artifact — CS-499 Submission</h3>
+      <p>
+        For my capstone enhancement, I significantly improved the CRUD interface and database 
+        interaction layer. The enhanced version includes:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Full CRUD with Input Validation</strong> — Added structured validation on 
+          fields such as animal type, breed, location coordinates, and boolean flags. Prevents 
+          malformed documents from entering MongoDB.
+        </li>
+
+        <li>
+          <strong>Improved Error Handling</strong> — Added try/except handling for connection 
+          failures, invalid queries, missing fields, and unexpected exceptions.
+        </li>
+
+        <li>
+          <strong>Query Optimization & Filtering</strong> — Updated search filters to support 
+          multi-criteria queries such as rescue type, age, training status, and location.
+        </li>
+
+        <li>
+          <strong>Encapsulated Database Access</strong> — Refactored CRUD logic into a clean 
+          class-based architecture, separating database logic from UI/dashboard logic.
+        </li>
+
+        <li>
+          <strong>Security Improvements</strong> — Added parameter sanitization, removed 
+          hard-coded credentials, and formatted queries to reduce injection risk.
+        </li>
+
+        <li>
+          <strong>Dashboard Enhancements</strong> — Improved data display structure to provide 
+          clearer, more user-friendly output when filtering or retrieving results.
+        </li>
+      </ul>
+
+      <p>
+        These improvements align the project more closely with professional full-stack development 
+        expectations and demonstrate the importance of secure, robust CRUD practices.
+      </p>
+
+      <p>
+        <a class="btn" href="Grazioso_Salvare_Enhanced_CS499.zip" download>
+          Download Enhanced Grazioso Salvare Project (With Improvements)
+        </a>
+      </p>
+    </section>
+
+    <section>
+      <h3>CS-499 Outcomes Demonstrated</h3>
+
+      <p>
+        <strong>Outcome 1 — Design and Evaluate Computing Solutions:</strong><br />
+        I implemented secure and efficient database operations while evaluating trade-offs between 
+        filtering performance, validation complexity, and dataset structure.
+      </p>
+
+      <p>
+        <strong>Outcome 4 — Use of Tools and Technologies:</strong><br />
+        Demonstrated strong understanding of MongoDB, PyMongo, structured CRUD design, and 
+        full-stack data flow between the database and a Python-based UI.
+      </p>
+
+      <p>
+        <strong>Outcome 5 — Security Mindset:</strong><br />
+        Added defensive programming practices, removed unsafe patterns, validated user inputs, 
+        and ensured safe query construction to mitigate potential database vulnerabilities.
+      </p>
+    </section>
+
+    <section>
+      <h3>Reflection</h3>
+
+      <p>
+        Enhancing this project helped me understand the importance of designing database layers 
+        that are not only functional but also secure, scalable, and maintainable. I learned how 
+        small improvements—such as better validation or consistent error handling—make a large 
+        difference in real-world applications. This enhancement also strengthened my ability to 
+        think like a full-stack developer by connecting data models, CRUD operations, and 
+        user-facing interfaces into a complete workflow.
+      </p>
+
+      <p>
+        This artifact now reflects my ability to develop secure, robust database components that 
+        can support more complex full-stack applications in a professional environment.
+      </p>
+    </section>
 
     <p>
-      This artifact originates from my CS-340 Data Visualization and Python course, where
-      I developed a MongoDB-backed dashboard for Grazioso Salvare. For my CS-499 Capstone,
-      I enhanced this project significantly to demonstrate professional-level skills in
-      databases, backend development, and data processing.
-    </p>
-
-    <h3>Enhancement Summary</h3>
-    <ul>
-      <li>Added MongoDB <strong>indexes</strong> on high-query fields (breed, outcome type, age)</li>
-      <li>Built <strong>aggregation pipelines</strong> for adoption insights and trend reporting</li>
-      <li>Created <strong>training candidate filters</strong> using domain-specific logic</li>
-      <li>Implemented <strong>prefix search</strong> (trie-like behavior using regex)</li>
-      <li>Enhanced CRUD module with improved structure and documentation</li>
-      <li>Added an <strong>enhanced Jupyter Notebook</strong> demonstrating all capabilities</li>
-    </ul>
-
-    <h3>Download Original Artifact</h3>
-    <p>
-      <a class="btn secondary" href="CS 340GraziosoSalvare.zip" download>
-        Download Original CS-340 Project
-      </a>
-    </p>
-
-    <h3>Download Enhanced Artifact</h3>
-    <p>
-      <a class="btn" href="CS340_GraziosoSalvare_Enhanced.zip" download>
-        Download Enhanced CS-340 Project (Python + Notebook)
-      </a>
-    </p>
-
-    <h3>Download CS-499 Narrative</h3>
-    <p>
-      <a class="btn secondary" href="CS340_Narrative.docx" download>
-        Download Enhancement Narrative
-      </a>
+      <a href="index.html">&larr; Back to Home</a>
     </p>
 
   </main>
