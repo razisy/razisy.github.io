@@ -1,143 +1,133 @@
-<link rel="stylesheet" href="styles.css" />
-<main class="container">
-  <h2>CS-360 Event Tracker — Android App Artifact (Software Design & Engineering)</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS-360 Event Tracker – Software Design & Engineering Artifact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-  <section>
-    <h3>Overview</h3>
-    <p>
-      The Event Tracker application was originally developed in 
-      <strong>CS-360: Mobile Architecture and Programming</strong> as a simple Android app 
-      that allowed users to create and store event reminders. For my 
-      <strong>Software Design & Engineering enhancement</strong> in the CS-499 capstone, 
-      I selected this project because it provided a strong foundation for demonstrating 
-      professional-level architectural design, mobile development skills, and best practices 
-      for maintainable software. The enhanced revision reflects modern Android development 
-      principles and transforms the academic prototype into an application that follows 
-      industry-aligned patterns and standards.
-    </p>
-  </section>
+<body>
 
-  <section>
-    <h3>Original Artifact (Before Enhancement)</h3>
-    <p>
-      The original CS-360 version of the app functioned correctly but was structured more like 
-      an academic exercise than a production-ready mobile application. Several architectural 
-      limitations existed, including:
-    </p>
-    <ul>
-      <li>Business logic placed directly inside Activities</li>
-      <li>No architectural pattern (e.g., MVVM)</li>
-      <li>Minimal separation between UI, logic, and data handling</li>
-      <li>No persistent storage beyond temporary in-memory lists</li>
-      <li>Limited error handling and validation</li>
-      <li>Very few comments or documentation for maintainability</li>
-    </ul>
-    <p>
-      Although the app worked, it was not scalable or maintainable in its initial form, making 
-      it an ideal candidate for enhancement in the Software Design & Engineering category.
-    </p>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Razi Syed</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="CS360_EventTracker.html" aria-current="page">CS-360 Artifact</a>
+        <a href="CS210_CornerGrocer.html">CS-210 Artifact</a>
+        <a href="CS340_Grazioso.html">CS-340 Artifact</a>
+        <a href="VideoPresentation.html">Video Presentation</a>
+      </nav>
+    </div>
+  </header>
 
-    <p>
-      <a class="btn secondary" href="CS360_Event_TrackerStarter_Before.zip" download>
-        Download Original CS-360 EventTracker Project
-      </a>
-    </p>
-  </section>
+  <main class="container">
+    <h2>CS-360 Event Tracker — Android App Artifact (Software Design & Engineering)</h2>
 
-  <section>
-    <h3>Final Enhanced Artifact — CS-499 Submission</h3>
-    <p>
-      As part of my capstone enhancements, I redesigned the Event Tracker using a professional, 
-      scalable architecture. The updated project demonstrates industry-standard software 
-      engineering principles and significantly improves clarity, structure, and long-term 
-      maintainability.
-    </p>
+    <section>
+      <h3>Overview</h3>
+      <p>
+        The Event Tracker application was originally developed in 
+        <strong>CS-360: Mobile Architecture and Programming</strong> as a simple Android app 
+        that allowed users to create and store event reminders. For my 
+        <strong>Software Design & Engineering enhancement</strong> in the CS-499 capstone, 
+        I selected this project because it provided a strong foundation for demonstrating 
+        professional-level architectural design, mobile development skills, and best practices 
+        for maintainable software. The enhanced revision reflects modern Android development 
+        principles and transforms the academic prototype into an application that follows 
+        industry-aligned patterns and standards.
+      </p>
+    </section>
 
-    <ul>
-      <li>
-        <strong>Implemented MVVM Architecture</strong> — Introduced ViewModel classes to remove 
-        logic from Activities, improved separation of concerns, and made the app more testable.
-      </li>
-      <li>
-        <strong>Added Room Database</strong> — Created <code>Event</code>, <code>EventDao</code>, 
-        and <code>EventDatabase</code> to support true persistent local storage using SQLite 
-        through the Room ORM.
-      </li>
-      <li>
-        <strong>Introduced Repository Pattern</strong> — Simplified data access logic by providing 
-        a unified interface between the ViewModel and Room, preparing the project for future 
-        integration with remote APIs.
-      </li>
-      <li>
-        <strong>Improved UI/UX with RecyclerView</strong> — Events now display in a structured, 
-        scrollable list using a custom <code>EventAdapter</code>, offering a cleaner and more 
-        intuitive user interface.
-      </li>
-      <li>
-        <strong>Added WorkManager Scaffold</strong> — Implemented background-processing structure 
-        to demonstrate readiness for scheduled notifications or syncing workflows.
-      </li>
-      <li>
-        <strong>Added Detailed Comments and Documentation</strong> — Included class-level and 
-        method-level comments, greatly improving readability for instructors, peers, and 
-        potential employers.
-      </li>
-    </ul>
+    <section>
+      <h3>Original Artifact (Before Enhancement)</h3>
+      <p>
+        The original CS-360 version of the app functioned correctly but was structured more like 
+        an academic exercise than a production-ready mobile application. Several architectural 
+        limitations existed, including:
+      </p>
+      <ul>
+        <li>Business logic placed directly inside Activities</li>
+        <li>No architectural pattern (e.g., MVVM)</li>
+        <li>Minimal separation between UI, logic, and data handling</li>
+        <li>No persistent storage beyond temporary in-memory lists</li>
+        <li>Limited error handling and validation</li>
+        <li>Very few comments or documentation for maintainability</li>
+      </ul>
 
-    <p>
-      These changes elevate the application from a basic class assignment to a professionally 
-      structured mobile application suitable for inclusion in a technical portfolio.
-    </p>
+      <p>
+        <a class="btn secondary" href="CS360_Event_TrackerStarter_Before.zip" download>
+          Download Original CS-360 EventTracker Project
+        </a>
+      </p>
+    </section>
 
-    <p>
-      <a class="btn" href="EventTracker_Enhanced_CS499_commented.zip" download>
-        Download Enhanced Event Tracker (With Comments)
-      </a>
-    </p>
-  </section>
+    <section>
+      <h3>Final Enhanced Artifact — CS-499 Submission</h3>
+      <p>
+        As part of my capstone enhancements, I redesigned the Event Tracker using a professional, 
+        scalable architecture. The updated project demonstrates industry-standard software 
+        engineering principles and significantly improves clarity, structure, and long-term 
+        maintainability.
+      </p>
 
-  <section>
-    <h3>CS-499 Outcomes Demonstrated</h3>
-    <p>
-      <strong>Outcome 1 — Design and Evaluate Computing Solutions:</strong>  
-      By restructuring the application using MVVM, Room, and the Repository pattern, I demonstrated 
-      the ability to design scalable mobile software and evaluate trade-offs in architecture, 
-      performance, and maintainability.
-    </p>
+      <ul>
+        <li><strong>Implemented MVVM Architecture</strong> — Removed logic from Activities and separated concerns.</li>
+        <li><strong>Added Room Database</strong> — Introduced persistent local storage using SQLite.</li>
+        <li><strong>Introduced Repository Pattern</strong> — Centralized data handling for scalability.</li>
+        <li><strong>Improved UI/UX with RecyclerView</strong> — Clean, responsive event list design.</li>
+        <li><strong>Added WorkManager Scaffold</strong> — Prepared for background processing support.</li>
+        <li><strong>Improved Documentation</strong> — Clear comments and code organization.</li>
+      </ul>
 
-    <p>
-      <strong>Outcome 2 — Professional Communication:</strong>  
-      The enhanced project includes comprehensive in-code comments, clear documentation, and an 
-      organized file structure that communicates design intent effectively to technical audiences.
-    </p>
+      <p>
+        <a class="btn" href="EventTracker_Enhanced_CS499_commented.zip" download>
+          Download Enhanced Event Tracker (With Comments)
+        </a>
+      </p>
+    </section>
 
-    <p>
-      <strong>Outcome 4 — Apply Industry Tools and Techniques:</strong>  
-      I incorporated Android development tools such as LiveData, RecyclerView, ViewModel, WorkManager, 
-      and Room. These enhancements align with best practices used in modern mobile applications and 
-      demonstrate proficiency with real-world development frameworks.
-    </p>
-  </section>
+    <section>
+      <h3>CS-499 Outcomes Demonstrated</h3>
 
-  <section>
-    <h3>Reflection</h3>
-    <p>
-      Enhancing this artifact allowed me to experience firsthand how much architectural choices 
-      impact the quality of an application. Through redesigning the app, I learned how MVVM improves 
-      maintainability, how Room provides reliable long-term storage, and how structured components 
-      make testing and feature expansion far easier. This enhancement not only strengthened my Android 
-      development skills but also reinforced core software engineering principles such as modularity, 
-      documentation, scalability, and security-minded design.
-    </p>
+      <p><strong>Outcome 1 — Computing Solutions:</strong>  
+        Implemented scalable architecture using MVVM + Repository + Room.
+      </p>
+
+      <p><strong>Outcome 2 — Communication:</strong>  
+        Added clear documentation and structured code explaining design decisions.
+      </p>
+
+      <p><strong>Outcome 4 — Tools & Techniques:</strong>  
+        Used RecyclerView, Room, WorkManager, LiveData, and ViewModel frameworks.
+      </p>
+    </section>
+
+    <section>
+      <h3>Reflection</h3>
+      <p>
+        Enhancing this artifact helped me understand the impact of architecture on long-term 
+        maintainability and scalability. By incorporating MVVM, Room, and clean documentation, 
+        I transformed a simple academic assignment into a professional-level Android project.
+      </p>
+    </section>
 
     <p>
-      This artifact now reflects the professional standards expected in the software development 
-      industry and demonstrates my readiness to design maintainable, user-focused applications in 
-      future mobile or full-stack development roles.
+      <a href="index.html">&larr; Back to Home</a>
     </p>
-  </section>
 
-  <p>
-    <a href="index.html">&larr; Back to Home</a>
-  </p>
-</main>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="y"></span> Raziuddin Syed • CS-499 ePortfolio</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
